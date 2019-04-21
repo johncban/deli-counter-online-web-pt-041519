@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     message = "The line is currently:"
-
+    # Source: https://apidock.com/ruby/Enumerator/each_with_index
   katz_deli.each_with_index do |customer, number|
     message += " #{number.to_i+1}. #{customer}"
   end
