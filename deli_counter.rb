@@ -5,5 +5,9 @@ def line(customer)
   else
     message = "The line is currently:"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
-    customer.each_with_index
+    customer.each_with_index do |value, index|
+      message += "#{index.to_i+1}. #{value}"
+    end
+    puts "#{message}
+  end"
 end
