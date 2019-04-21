@@ -6,6 +6,7 @@ def line(customer)
     puts "there is nobody in line"
   else
     puts "there are people in line"
+  end
 end
 
 line(katz_deli)
