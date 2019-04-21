@@ -1,13 +1,13 @@
 # Write your code here.
 katz_deli = []
 
-def line(customer)
-  if customer.length == 0
+def line(katz_deli)
+  if katz_deli.length == 0
     puts "The line is currently empty."
   else
     message = "The line is currently:"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
-    customer.each_with_index do |value, index|
+    katz_deli.each_with_index do |value, index|
       message += "#{index.to_i+1}. #{value}"
     end
     puts "#{message}"
