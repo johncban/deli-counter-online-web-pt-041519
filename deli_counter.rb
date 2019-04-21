@@ -5,7 +5,12 @@ def line(customer)
   if customer.length == 0
     puts "there is nobody in line"
   else
-    puts "there are people in line"
+    message = "there are people in line"
+    # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
+    customer.each_with_index do |value, index|
+      message += "#{index.to_i+1}. #{value}"
+    end
+    puts "#{message}"
   end
 end
 
