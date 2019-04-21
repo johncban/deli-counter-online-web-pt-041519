@@ -9,7 +9,7 @@ def line(katz_deli)
     message = "The line is currently:"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
     katz_deli.each_with_index do |customer, num_line|
-      message.push "#{number_line.to_i+1}. #{customer}"
+      message.push "#{num_line.to_i+1}. #{customer}"
     end
     puts "#{message}"
   end
