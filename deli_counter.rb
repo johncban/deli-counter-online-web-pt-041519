@@ -7,6 +7,7 @@ def line(katz_deli)
   else
     message = "The line is currently:"
     # Source: https://apidock.com/ruby/Enumerator/each_with_index
+    # Source: https://stackoverflow.com/questions/10093493/difference-between-integervalue-and-value-to-i
   katz_deli.each_with_index do |customer, number|
     message += " #{number.to_i+1}. #{customer}"
   end
