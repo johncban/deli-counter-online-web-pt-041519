@@ -3,7 +3,7 @@ katz_deli = []
 
 def line(customer)
   if customer.length == 0
-    puts "there is nobody in line"
+    puts "The line is currently empty."
   else
     message = "there are people in line"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
@@ -13,5 +13,3 @@ def line(customer)
     puts "#{message}"
   end
 end
-
-line(katz_deli)
