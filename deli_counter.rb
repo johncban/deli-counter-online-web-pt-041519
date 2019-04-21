@@ -5,10 +5,11 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
+    num_line = 1
     message = "The line is currently:"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
-    katz_deli.each_with_index do |customer, number|
-      message.push "#{number.to_i+1}. #{customer}"
+    katz_deli.each_with_index do |customer, num_line|
+      message.push "#{number_line.to_i+1}. #{customer}"
     end
     puts "#{message}"
   end
