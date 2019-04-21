@@ -7,8 +7,8 @@ def line(katz_deli)
   else
     message = "The line is currently:"
     # Source: https://stackoverflow.com/questions/20258086/difference-between-each-with-index-and-each-with-index-in-ruby
-    katz_deli.each_with_index do |value, index|
-      message.push "#{index.to_i+1}. #{value}"
+    katz_deli.each_with_index do |customer, number|
+      message.push "#{number.to_i+1}. #{customer}"
     end
     puts "#{message}"
   end
